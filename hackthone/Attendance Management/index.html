@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Management </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Attendance Management </h1>
+        
+        <div id="mark-attendance">
+            <h2>Attendance</h2>
+            <label for="class-select">Select Class:</label>
+            <select id="class-select">
+                <option value="class1">Class 1</option>
+                <option value="class2">Class 2</option>
+                <option value="class3">Class 3</option>
+            </select>
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" required>
+            <div id="attendance-list">
+                
+            </div>
+            <div class="status-dropdown">
+                <label for="attendance-status">Select Status:</label>
+                <select id="attendance-status">
+                    <option value="Present">Present</option>
+                    <option value="Absent">Absent</option>
+                    <option value="Late">Late</option>
+                    <option value="Leave">Leave</option>
+                </select>
+                <button id="mark-button">Mark</button>
+            </div>
+            <div id="admin-password-section">
+                <label for="admin-password">Admin Password:</label>
+                <input type="password" id="admin-password">
+                <button id="admin-verify-button">Verify</button>
+            </div>
+        </div>
+        
+        <div id="student-statistics">
+            <h2>Student Statistics</h2>
+          
+        </div>
+        
+        <div id="transfer-student">
+            <h2>Transfer Student</h2>
+            <label for="student-name">Student Name:</label>
+            <input type="text" id="student-name">
+            <label for="from-section">From Section:</label>
+            <select id="from-section">
+                
+            </select>
+            <label for="to-section">To Section:</label>
+            <select id="to-section">
+              
+            </select>
+            <button id="transfer-button">Transfer</button>
+        </div>
+    </div>
+
+   
+  <script type="module" src="config.js"></script>
+  <script  type="module" src="app.js"></script>
+</body>
+</html>
